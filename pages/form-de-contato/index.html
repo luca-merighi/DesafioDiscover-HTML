@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Luca Merighi">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsiviness.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    
+    <link rel="shortcut icon" href="./form-icon.png" type="image/x-icon">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <form class="animation-left">
+        <fieldset>
+            <legend class="animation-left">
+                Entre em Contato
+            </legend>
+
+            <div class="subject-input animation-left">
+                <label for="subject">Assunto:</label>
+                <select id="subject">
+                    <option value="">Suporte</option>
+                    <option value="">Sugestão</option>
+                    <option value="">Reclamação</option>
+                </select>
+            </div>
+
+            <label 
+                for="name" 
+                class="animation-left">
+                Nome:
+            </label>
+            <input 
+                required
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Digite seu nome.."
+                class="name-input animation-left">
+
+            <label 
+                for="email"
+                class="animation-left">
+                E-mail:
+            </label>
+            <input 
+                required
+                type="email" 
+                name="email" 
+                id="email" 
+                pattern=”.+@gmail\.com”
+                placeholder="Digite seu e-mail.."
+                class="email-input animation-left">
+
+            <label 
+                for="message"
+                class="animation-left">
+                Mensagem:
+            </label>
+            <textarea 
+                required
+                name="message" 
+                id="message" 
+                placeholder="Escreva sua mensagem.."
+                cols="30" rows="10"
+                class="message-textarea animation-left"></textarea>
+
+            <div class="news-input animation-left">
+                <input 
+                type="checkbox" 
+                name="news" 
+                id="news">
+                <label for="news">Aceito receber novidades por e-mail</label>
+            </div>
+
+            <button type="submit" class="animation-left">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

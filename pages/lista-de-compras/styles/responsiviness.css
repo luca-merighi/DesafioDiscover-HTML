@@ -1,0 +1,6 @@
+@media(min-width: 768px) {
+    #container {
+        background-color: #f5f6fa;
+        box-shadow: 2px 5px 10px #2d34369a;
+    }
+}

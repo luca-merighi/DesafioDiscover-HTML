@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f5f6;
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+
+    border-color: #4f5658;
+
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+
+    color: #2d3436;
+}
+
+fieldset legend {
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.subject-input {
+    margin-top: 1rem;
+}
+
+.subject-input select,
+input,
+textarea {
+    background-color: #e0e4e5;
+}
+
+fieldset label {
+    font-weight: 700;
+    color: #3e4547;
+}
+
+fieldset select {
+    width: 8rem;
+}
+
+select,
+.name-input,
+.email-input,
+.message-textarea,
+button {
+    border: 2px solid #3e4547;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.message-textarea {
+    resize: vertical;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.news-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.news-input input {
+    width: 15px;
+    height: 15px;
+}
+
+.news-input label {
+    font-size: 16px;
+}
+
+button {
+    width: 4rem;
+
+    border-radius: 5px;
+    background-color: #55efc4;
+    font-weight: 500;
+
+    margin: 0 auto;
+}
